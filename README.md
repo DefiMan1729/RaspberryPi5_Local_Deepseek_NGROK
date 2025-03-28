@@ -86,3 +86,4 @@ This guide and code are provided under the MIT License.
 ---
 
 Explore my repository for guides to running Deepseek and other models locally on Raspberry Pi 
+https://github.com/DefiMan1729/LocalLLM
