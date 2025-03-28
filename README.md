@@ -1,6 +1,7 @@
 # Serving LLMs Running Locally on Raspberry Pi Over Public Internet Using FastAPI and Ngrok
 
 This repository provides a step-by-step guide to expose large language models (LLMs), such as Deepseek, running locally on a Raspberry Pi as APIs over the public internet. We use **FastAPI** to create the API endpoint and **Ngrok** to expose the localhost to a public URL.
+<img width="1174" alt="Screenshot 2025-03-28 at 11 36 39 PM" src="https://github.com/user-attachments/assets/00289d40-f14c-4e71-bd55-e62dee5e3b21" />
 
 ## Prerequisites
 
@@ -17,6 +18,15 @@ This repository provides a step-by-step guide to expose large language models (L
 Ensure you have the required Python libraries:
 ```bash
 pip install fastapi uvicorn ollama
+```
+Refer ngrok webiste for installation details
+```
+curl -sSL https://ngrok-agent.s3.amazonaws.com/ngrok.asc \
+	| sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null \
+	&& echo "deb https://ngrok-agent.s3.amazonaws.com buster main" \
+	| sudo tee /etc/apt/sources.list.d/ngrok.list \
+	&& sudo apt update \
+	&& sudo apt install ngrok
 ```
 refer the requirements.tx file attached
 
@@ -75,5 +85,4 @@ This guide and code are provided under the MIT License.
 
 ---
 
-Explore my repository for guides to running Deepseek and other models locally on Raspberry Pi 5
-```
+Explore my repository for guides to running Deepseek and other models locally on Raspberry Pi 
